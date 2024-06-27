@@ -11,6 +11,6 @@ main(){
 	scanf("%f",&c);
 	printf("enter your TA(in perc):");
 	scanf("%f",&d);
-	printf("your gross salary is %.2f",a+(0.01*a)+(0.01*a)+(0.01*a));
+	printf("your gross salary is %.2f",a+(0.01*a*b)+(0.01*a*c)+(0.01*a*d));
 	getch();
 }
