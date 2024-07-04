@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include<stdio.h>
 #define P printf
 int main (){
@@ -57,4 +58,65 @@ int main (){
                     :
             :
         :
+=======
+#include<stdio.h>
+#define P printf
+int main (){
+    int a,b,c,d,e,f,g,h;
+    printf("enter a , b , c , d , e , f , g & h:\n");
+    scanf("%d %d %d %d %d %d %d %d",&a,&b,&c,&d,&e,&f,&g,&h);
+    (a>b)
+        ?(a>c)
+            ?(a>d)
+                ?(a>e)
+                    ?(a>f)
+                        ?(a>g)
+                            ?(a>h)
+                                ?P("a is big")
+                                :P("h is big")
+                            :(g>h)
+                                ?P("g is big")
+                                :P("h is big")
+                        :(f>g)
+                            ?(f>h)
+                                ?P("f is big")
+                                :P("h is big")
+                            :(g>h)
+                                ?P("g is big")
+                                :P("h is big")
+                    :(e>f)
+                        ?(e>g)
+                            ?(e>h)
+                                ?P("e is big")
+                                :P("h is big")
+                            :(g>h)
+                                ?P("g is big")
+                                :P("h is big")
+                        :(f>g)
+                            ?(f>h)
+                                ?P("f is big")
+                                :P("h is big")
+                            :(g>h)
+                                ?P("g is big")
+                                :P("h is big")
+                :(d>e)
+                    ?(d>f)
+                        ?(d>g)
+                            ?(d>h)
+                                ?P("d is big")
+                                :P("h is big")
+                            :(g>h)
+                                ?P("g is big")
+                                :P("h is big")
+                        :(f>g)
+                            ?(f>h)
+                                ?P("f is big")
+                                :P("h is big")
+                            :(g>h)
+                                ?P("g is big")
+                                :P("h is big")
+                    :
+            :
+        :
+>>>>>>> cb641aade79813abd8d5a343c7854d39d07e3f04
 }
