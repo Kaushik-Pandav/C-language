@@ -9,7 +9,7 @@ int main()
         sum=sum+ld;
         mul=mul*ld;
     }
-    if(sum==num)
+    if(sum==mul)
     {
         printf("this is magic number");
     }
