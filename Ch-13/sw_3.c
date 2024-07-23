@@ -12,9 +12,9 @@ int main()
     }
     for(int j=0 ;j<n;j++)
     {
-        for(int i=0;i<n;i++)
+        for(int i=j+1;i<n;i++)
         {
-            if(A[i]==A[i+1])
+            if(A[j]==A[i])
             {
                 c++;
             }
