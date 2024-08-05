@@ -31,9 +31,12 @@ int main()
     }
     for(int i=0;i<l;i++)
     {
-        if(str2[i]==la)
+        if(str2[i]!=" ")
         {
-            printf("%c repeats %d times\n",str1[i],la);
+           if(str2[i]==la)
+            {
+                printf("%c repeats %d times\n",str1[i],la);
+            } 
         }
     }
 }
