@@ -3,7 +3,7 @@
 int getint()
 {
     int n;
-    printf("enter a number");
+    printf("enter a %s",Name);
     scanf("%d",&n);
     return n;
 }
@@ -30,30 +30,23 @@ int arraymax()
     }
     return l;
 }
-
-int array()
+int arr()
 {
-    int n=getint();
+    int n=getint("lenth");
     int a[n];
-    for(int i=0; i<n;i++)
+    for(int i=0; i<n; i++)
     {
         printf("enter a[%d]",i);
         scanf("%d",&a[i]);
     }
-    return a[n];
+    return a;
 }
-
-int max()
+int arrsum(int a[],lenth)
 {
-    int l=0;
-    int n=getint();
-    int b[n]=array();
-    for(int i=0; i<n; i++)
+    int sum=0;
+    for(int i=0;i<lenth;i++)
     {
-        if(b[i]>l)
-        {
-            l=b[i];
-        }
+        sum=sum+a[i];
     }
-    return l;
+    return sum;
 }
