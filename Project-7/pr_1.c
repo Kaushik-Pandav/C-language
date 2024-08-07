@@ -1,6 +1,8 @@
 #include "f.c"
 int main()
 {
+    int p;
+    do{
     printf("press 1 for addition\n");
     printf("press 2 for subtraction\n");
     printf("press 3 for multiplication\n");
@@ -8,8 +10,8 @@ int main()
     printf("press 5 for modulo\n");
     printf("press 0 for exit\n");
     int a=getint("a");
-    int p=getint("Process");
     int b=getint("b");
+    p=getint("Process");
     switch(p)
     {
         case 1:
@@ -29,8 +31,10 @@ int main()
             break;
         case 0:
             printf("Thank You!\n");
+            break;
         default:
             printf("Please Enter a valid process");
             break;
     }
+    }while(p!=0);
 }
