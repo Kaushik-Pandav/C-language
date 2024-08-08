@@ -13,7 +13,7 @@ int main()
     int b=getint("b");
     p=getint("Process");
     switch(p)
-    {
+        {
         case 1:
             printf("Addition of %d and %d is %d\n", a,b,getsum(a,b));
             break;
@@ -35,6 +35,6 @@ int main()
         default:
             printf("Please Enter a valid process");
             break;
-    }
+        }
     }while(p!=0);
 }
