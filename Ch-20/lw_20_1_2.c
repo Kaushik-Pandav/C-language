@@ -13,4 +13,5 @@ int main()
     *p2=(*p1)-(*p2);
     *p1=(*p1)-(*p2);
     printf("after swaping value of A is %d and B is %d",*p1,*p2);
+    
 }   
