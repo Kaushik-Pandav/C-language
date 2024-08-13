@@ -1,18 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    char str1[100];
     int l=0;
-    printf("enter a string: ");
-    scanf("%[^\n]", &str1);
+    char str[100];
+    printf("Enter a string : ");
+    scanf("%[^\n]",&str);
     int *ptr[100];
-    for(int i=0; i<100; i++)
+    for(int i=0;str[i]!='\0';i++)
     {
-        ptr[i] = &str1[i];
-    }
-    for(int i=0;*ptr[i]!=NULL;i++)
-    {
+        ptr[i]=&str[i];
         l++;
     }
-    printf("lenth of the string is %d", l);
+    printf("lenth of string is %d",l);
 }
