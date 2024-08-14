@@ -9,6 +9,9 @@ int main()
     for(int i=0;str[i]!='\0';i++)
     {
         ptr[i]=&str[i];
+    }
+    for(int i=0;str[i]!='\0';i++)
+    {
         l++;
     }
     printf("lenth of string is %d",l);
