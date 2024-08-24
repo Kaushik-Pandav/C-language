@@ -1,16 +1,16 @@
-#include<stdio.h>
-int main()
-{
+#include <stdio.h>
+
+int main() {
     int l=0;
-    char str[100];
-    printf("Enter a string : ");
-    scanf("%[^\n]",&str);
-    int *ptr[100];
-    for(int i=0;str[i]!='\0';i++)
+    char s[100];
+     int *p[100];
+    for(int i=0;i<100;i++)
     {
-        ptr[i]=&str[i];
+        p[i]=&s[i];
     }
-    for(int i=0;str[i]!='\0';i++)
+    printf("Enter a string : ");
+    scanf("%[^\n]",&s);
+    for(int i=0;*p[i]!='\0';i++)
     {
         l++;
     }
