@@ -1,35 +1,43 @@
-#include<stdio.h>
-void cube(int ar[][],int b)
+#include <stdio.h>
+
+void cube(int a,int *p[a][a])
 {
-    for(int i=0;i<b;i++)
+    for(int i=0;i<a;i++)
     {
-        for(int j=0;j<b;j++)
+        for(int j=0;j<a;j++)
         {
-            ar[i][j] = ar[i][j]*ar[i][j]*ar[i][j];
+            *p[i][j]=((*p[i][j]) * (*p[i][j]) * (*p[i][j]));
         }
     }
 }
-int main()
-{
+int main() {
     int n;
-    printf("enter  array size: ");
+    printf("enter the size of 2D array: ");
     scanf("%d",&n);
-    int arr[n][n];
+    int a[n][n];
+    int *p[n][n];
     for(int i=0;i<n;i++)
     {
         for(int j=0;j<n;j++)
         {
-            printf("enter element at a[%d][%d]: ",i,j);   
-            scanf("%d",&arr[i][j]);
+            p[i][j]=&a[i][j];
         }
     }
-    cube(arr[n][n],n);
     for(int i=0;i<n;i++)
     {
         for(int j=0;j<n;j++)
         {
-            printf("%d ",arr[i][j]);
+            printf("enter a[%d][%d]=",i,j);
+            scanf("%d",p[i][j]);
+        }
+    }
+    cube(n,p);
+    printf("Cube of this array is : \n");
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            printf("%d ",*p[i][j]);
         }
         printf("\n");
     }
-}
