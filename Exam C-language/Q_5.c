@@ -13,9 +13,9 @@ struct book {
     for(int i=0; i<n; i++) 
     {
         printf("Enter book title: ");
-        scanf("%s", b[i].t);
+        scanf("%s", &b[i].t);
         printf("Enter book author: ");
-        scanf("%s", b[i].a);
+        scanf("%s", &b[i].a);
         printf("Enter book price: ");
         scanf("%d", &b[i].p);
     }
